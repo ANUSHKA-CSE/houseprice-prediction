@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/static/app.js"></script>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Predict Your Price</h2>
+        <label>Area (sqft): <input id="uiSqft" type="text" value="1000"></label><br>
+        <label>BHK:
+            <select id="uiBHK">
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+        </label><br>
+        <label>Bath:
+            <select id="uiBathrooms">
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+        </label><br>
+        <label>Location: <input id="uiLocations" type="text" value="Electronic City"></label><br>
+        <button onclick="onClickedEstimatePrice()">Estimate Price</button>
+        <div id="uiEstimatedPrice"></div>
+    </div>
+</body>
+</html>
